@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+  <header>
+  <h1 id="title">freeCode Camp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us to improve the platform</p>
+  </header>
+
+  <form id="survey-form">
+    <div class="form-spacing">
+    <label id="name-label" for="name">Name</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+    </div>
+    <div class="form-spacing">
+    <label id="email-label" for="email">Email</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+    </div>
+    <div class="form-spacing">
+    <label id="number-label" for="number">Age <span class="small-text">(optional)</span></label>
+    </div>
+    <div class="form-spacing">
+    <input type="number" id="number" placeholder="Age">
+    </div>
+    <div class="form-spacing">
+      <p>What option best describes your current role?</p>
+    <select name="role" id="dropdown" required>
+      <option disabled selected value>Select current role</option>
+      <option value="sutdent">Student</option>
+      <option value="worker">Full Time Job</option>
+      <option value="learner">Full Time Learner</option>      
+      <option value="decline">Decline to specify</option>    
+      <option value="other">Other</option>
+    </select>
+    </div>
+    <div class="form-spacing">
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <label>
+        <input name="user-recomended" value="" type="radio" class="radio-input" selected>
+        Definitely
+        </label>
+      <label>
+        <input name="user-recomended" value="" type="radio" class="radio-input">
+        Maybe
+        </label>
+      <label>
+        <input name="user-recomended" value="" type="radio" class="radio-input">
+        Not sure
+      </label>
+    </div>
+    <select name=""
+    <div class="form-spacing">
+    </div>
+    <div class="form-spacing">
+    </div>
+    <input type="submit" id="submit" value="Submit">
+  </form>
+</body>
+</html>
