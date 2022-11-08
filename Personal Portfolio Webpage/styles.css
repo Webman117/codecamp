@@ -1,0 +1,255 @@
+/* Core assets */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #222831;
+  --primary-color-alpha: #222831d0;
+  --secondary-color: #1a4ab3;
+  --primary-highlight: #00ADB5;
+  --secondary-highlight: #2E0249;
+  --text-color: #00ADB5;
+  --text-color-alt: #cecbcb;
+  
+}
+
+.top-margin {
+  margin-top: 10px;
+}
+
+.div-bar {
+  width: 100%;
+  height: 15px;
+  background-color: var(--secondary-highlight);
+}
+
+/* Header styling */
+
+header {
+  background-image: url(https://images.unsplash.com/photo-1566837945700-30057527ade0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 125vh;
+  position: relative;
+}
+
+header::after {
+  content: '';
+  background-color: var(--primary-color-alpha);
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+header * {
+  position:relative;
+  z-index: 1;
+}
+
+h1 {
+  margin: 0 auto;
+  font-size: 8vw;
+  
+}
+
+.h1-p {
+  font-size: 3vw;
+  margin: 5px auto;
+  padding-top: 10px;
+}
+
+
+/* Body Styling */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+#img-container {
+  background-image: url(https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+section {
+  text-align: center;
+  background-color: #28536B;
+}
+
+.img-text {
+  color: var(--text-color-alt);
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1410px;
+  margin: 20px auto 0;
+}
+
+.project-tile {
+  max-width: 450px;
+  margin: 15px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.project-tile:hover {
+  transform: scale(1.1);
+}
+
+.project-tile img {
+  width: 100%;
+}
+
+h2 {
+  font-size: 5vw;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 4vw;
+  margin-bottom: 0;
+}
+
+
+
+/* Navbar Styling */
+
+nav {
+  background-color: var(--secondary-color);
+  border-bottom: solid 3px var(--secondary-highlight);
+  padding: 5;
+  margin: 0px auto;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 50px;
+}
+
+.link-container {
+  margin:  10px auto;
+  border-radius: 5px;
+}
+
+
+#nav-link {
+  box-shadow: inset 0 0 0 0 var(--primary-highlight);
+  color: var(--text-color);
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  padding: 9px 5px;
+  text-decoration: none;
+  font-weight: 800;
+  border-radius: 5px;
+}
+
+#nav-link:hover {
+  box-shadow: inset 100px 100px 15px 1px var(--primary-highlight);
+  color: var(--text-color-alt);
+  padding: 9px 5px;
+  border-radius: 5;
+}
+
+/* social link stlying */
+
+.social-ul {
+  display: inline-flex;
+  list-style-type: none;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+
+.social-ul a {
+  font-size: 35px;
+  margin: 5px 10px;
+}
+
+#social, #projects {
+  border-top: solid 3px var(--secondary-highlight);
+  border-bottom: solid 3px var(--secondary-highlight);
+}
+
+section p {
+  margin: 25px auto;
+  padding: 10px;
+}
+
+#social p {
+  font-weight: 500;
+}
+
+#social li {
+  margin: 5px;
+  font-size: 3em;
+}
+
+.profile-link {
+  box-shadow: inset 0 0 0 0 var(--primary-highlight);
+  color: var(--text-color);
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  border-radius: 3px;
+}
+
+.profile-link:hover {
+  box-shadow: inset 100px 100px 15px 1px var(--primary-highlight);
+  color: var(--text-color-alt);
+  border-radius: 3px;
+}
+
+
+.no-bullet {
+  list-style: none;
+}
+
+/* Footer styling */
+
+footer {
+  background-color: var(--primary-color);
+  border-top: solid 3px var(--secondary-highlight);
+  padding: 10px;
+  text-align: right;
+}
+
+@media (max-width: 1410px) {
+ h1, h2, h3 {
+  font-size: 30px;
+ }
+ .h1-p {
+  font-size: 25px;
+ }
+}
